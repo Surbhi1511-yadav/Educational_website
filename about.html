@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Educational Website - Project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/about.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navbar  -->
+    <nav>
+      <img src="./images/logo.png" alt="Logo" />
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fa fa-times"></i>
+          <li><a href="#">Home</a></li>
+          <li><a class="active" href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <img class="menu-btn" src="./images/menu.png" alt="" />
+      </div>
+    </nav>
+
+    <!-- Home Section  -->
+    <section id="about-home">
+      <h2>About WebFul Education / </h2>
+    </section>
+
+    <!-- Content Section  -->
+    <section id="content">
+        <div class="content-img">
+            <img src="./images/a.png" alt="">
+        </div>
+        <div class="content-text">
+            <h2>Enhance your skills with best Online Courses</h2>
+            <p>You can start and finish one of thrse popular courses in under a day - for free! Check out the list below. Take the course for free.</p>
+            <div class="content-fe">
+                <img src="./images/fe1.png" alt="">
+                <div class="text">
+                <h3>400+ Courses</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, modi.</p>
+            </div>
+            </div>
+            <div class="content-fe">
+                <img src="./images/fe2.png" alt="">
+                <h3>400+ Courses</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, modi.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section  -->
+    <section id="features">
+      <h1>Awesome Features</h1>
+      <p>Replenish man have thing gathering lights yielding shall you</p>
+      <div class="feature-base">
+        <div class="feature-box">
+          <i class="fa fa-graduation-cap"></i>
+          <h3>Scholarship Facilities</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad,
+            accusantium.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <i class="fa fa-certificate"></i>
+          <h3>Sell Online Course</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad,
+            accusantium.
+          </p>
+        </div>
+
+        <div class="feature-box">
+          <i class="fa fa-award"></i>
+          <h3>Global Certificates</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad,
+            accusantium.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    
+
+    
+
+    
+
+    <!-- Footer Section  -->
+    <footer id="footer">
+      <div class="footer-column">
+        <h3>Top Products</h3>
+        <li>Manage Reputation</li>
+        <li>Power Tools</li>
+        <li>Managed Website</li>
+        <li>Marketing Services</li>
+      </div>
+
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <li>Power Tools</li>
+        <li>Jobs</li>
+        <li>Marketing Services</li>
+        <li>Manage Reputation</li>
+      </div>
+
+      <div class="footer-column">
+        <h3>Features</h3>
+        <li>Managed Website</li>
+        <li>Marketing Services</li>
+      </div>
+
+      <div class="footer-column">
+        <h3>Resources</h3>
+        <li>Research</li>
+        <li>Experts</li>
+        <li>Managed Websites</li>
+        <li>Marketing Service</li>
+      </div>
+
+      <div class="footer-column">
+        <h3>Newsletter</h3>
+        <p>You can trust us, we only send promo offers.</p>
+        <div class="suscribe">
+          <input type="email" placeholder="Enter Your Email Here" />
+          <a href="#" class="yellow">SUBSCRIBE</a>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>
+          Copright &copy;2022 All rights reserved | This website is made by
+          Surbhi Yadav
+        </p>
+        <div class="pro-links">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin-in"></i>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      $(".menu-btn").click(function () {
+        $("nav .navigation ul").addClass("active");
+      });
+      $("#menu-close").click(function () {
+        $("nav .navigation ul").removeClass("active");
+      });
+    </script>
+  </body>
+</html>
