@@ -109,7 +109,8 @@ nav .navigation ul li a:hover{
 }
 #content .content-text h2{
     color: #101c32;
-    margin-bottom: 20px;
+    margin-bottom: 55px;
+    margin-top: 25px;
     font-size: 2.5rem;
 }
 #content .content-text p{
@@ -117,8 +118,13 @@ nav .navigation ul li a:hover{
     font-size:1.2rem;
     margin-bottom: 20px;
 }
+#content .content-text .container{
+    margin-top: 40px;
+    padding-left: 30px;
+}
 #content .content-text .content-fe{
     display: flex;
+    margin-top: 20px;
 }
 #content .content-text .content-fe .text{
     display: flex;
@@ -127,12 +133,13 @@ nav .navigation ul li a:hover{
 #content .content-text .content-fe img{
     width: 60px;
     height: 60px;
+    margin-right: 20px;
 }
 
 
 /* Features Section  */
 #features{
-    padding: 5vw 8vw 0 8vw;
+    padding: 0 8vw 0 8vw;
     text-align: center;
 }
 #features .feature-base{
@@ -165,6 +172,36 @@ nav .navigation ul li a:hover{
     font-size: 1rem;
     font-weight: 400;
     color: rgb(70,70,87);
+}
+
+
+/* Trust Section  */
+#trust{
+    padding: 8vw 8vw 0 8vw;
+    text-align: center;
+}
+#trust h2{
+    color: #101c32;
+    font-size: 2.5rem;
+}
+#trust p{
+    color: #7b838a;
+    font-size:1.2rem;
+    margin-bottom: 50px;
+}
+#trust .trust-img{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+#trust .trust-img img{
+    width: 100px;
+    height: 100px;
+    transition: 0.3s ease;
+}
+#trust .trust-img img:hover{
+    transform: scale(1.1);
 }
 
 
@@ -317,19 +354,25 @@ flex-wrap: wrap;
     #home p{
         width: 90%;
     }
+    #content{
+        display: flex;
+        flex-direction: column;
+    }
+    #content .content-img{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    #content .content-text{
+        width: 100%;
+    }
+    #content .content-text h2{
+        margin-bottom: 30px;
+    }
     #features{
         padding: 8vw 4vw 0 4vw;
     }
-    #course{
-        padding: 8vw 4vw 0 4vw;
-    }
-    #registration{
-        padding: 6vw 4vw 6vw 4vw;
-    }
-    #registration .remainder .time{
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 40px;
+    #trust .trust-img img{
+        margin: 10px;
     }
     #footer .copyright .pro-links{
         margin-top: 10px;
@@ -338,19 +381,12 @@ flex-wrap: wrap;
 }
 
 @media(max-width:520px){
-    #registration{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+    #about-home h2{
+        color: #fff;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
     }
-    #registration .remainder .time{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
+    #trust .trust-img img{
+        margin: 10px;
     }
 }
